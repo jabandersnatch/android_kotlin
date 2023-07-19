@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.SavingTipsFragment"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/background">
+
+    <TextView
+        android:id="@+id/ViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Saving Tips"
+        style="@style/darkBlue_a_colorNormal"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center|top"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="280dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- This is the button that will be animated the button also has an Icon -->
+    <!-- The Icon is a vector drawable call baseline_add_circle -->
+    <!-- The button is located at the bottom of the screen and is centered with some padding -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/green"
+        android:clickable="true"
+        android:src="@drawable/baseline_favorite_border_24"
+        android:padding="16dp"
+        android:contentDescription="@string/add_saving_tip"/>
+
+
+
+</FrameLayout>
+

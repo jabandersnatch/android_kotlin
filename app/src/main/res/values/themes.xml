@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Androidkotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green</item>
+        <item name="colorSecondaryVariant">@color/blue_petroleo</item>
+        <item name="colorOnSecondary">@color/red</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="darkBlue_a_colorNormal">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+    <style name="spinner_Arrow">
+        <item name="android:backgroundTint">@color/gray</item>
+    </style>
+    <style name="background">
+        <item name="android:background">@drawable/back</item>
+    </style>
+    <style name="back_gray">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="buttons">
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="back_lightgray">
+        <item name="android:backgroundTint">@color/colorNormal</item>
+        <item name="android:background">@color/colorNormal</item>
+    </style>
+    <style name="blue_a_normal">
+        <item name="android:textColor">@color/blue_petroleo</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterPaymentMethodFragment"
+    style="@style/background">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        style="@style/darkBlue_a_colorNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:rotationY="0"
+        android:text="Register payment method"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputNamePaymentMethod"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="334dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:hint="Name"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNamePaymetMethod"
+            style="@style/back_gray"
+            android:layout_width="308dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerTitle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="300dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/style_border_editext"
+        android:backgroundTint="@color/light_blue"
+        android:baselineAligned="false"
+        android:clipToOutline="false"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/addPaymentMethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputNamePaymentMethod"
+        app:layout_constraintVertical_bias="0.166">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textRegisterMov"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-35dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="12dp"
+        android:text="Select icon"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/addPaymentMethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputValuePaymentMethod"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="301dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:hint="Value ($)"
+        app:boxStrokeColor="#A3BC00"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        app:layout_constraintBottom_toTopOf="@+id/addPaymentMethod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCel"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextValuePaymentMethod"
+            style="@style/back_gray"
+            android:layout_width="278dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/custom_input"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/addPaymentMethod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageClothing"
+            app:layout_constraintVertical_bias="0.38" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addPaymentMethod"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="416dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Add payment method"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputNamePaymentMethod" />
+
+    <ImageButton
+        android:id="@+id/imageBank"
+        style="@style/buttons"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="4dp"
+        android:width="100dp"
+        android:height="50dp"
+        android:background="@drawable/style_border_editext"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCard"
+        app:layout_constraintTop_toBottomOf="@+id/textRegisterMov" />
+
+    <ImageButton
+        android:id="@+id/imageCard"
+        style="@style/buttons"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:width="100dp"
+        android:height="50dp"
+        android:background="@drawable/style_border_editext"
+        android:maxWidth="500dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegisterMov" />
+
+    <ImageButton
+        android:id="@+id/imageCoin"
+        style="@style/buttons"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:width="100dp"
+        android:height="50dp"
+        android:background="@drawable/style_border_editext"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCard" />
+
+    <ImageButton
+        android:id="@+id/imageCel"
+        style="@style/buttons"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="16dp"
+        android:width="150dp"
+        android:height="100dp"
+        android:background="@drawable/style_border_editext"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCoin"
+        app:layout_constraintTop_toBottomOf="@+id/imageBank" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

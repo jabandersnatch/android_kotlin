@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_bar"
+    app:startDestination="@id/savingTipsFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kotlin.android_kotlin.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/savingTipsFragment"
+        android:name="com.kotlin.android_kotlin.view.SavingTipsFragment"
+        android:label="fragment_saving_tips"
+        tools:layout="@layout/fragment_saving_tips" />
+    <fragment
+        android:id="@+id/registerMovementFragment"
+        android:name="com.kotlin.android_kotlin.view.RegisterMovementFragment"
+        android:label="fragment_register_movement"
+        tools:layout="@layout/fragment_register_movement" />
+    <fragment
+        android:id="@+id/historicalFragment"
+        android:name="com.kotlin.android_kotlin.view.HistoricalFragment"
+        android:label="fragment_historical"
+        tools:layout="@layout/fragment_historical" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.kotlin.android_kotlin.view.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/registerDebtFragment"
+        android:name="com.kotlin.android_kotlin.view.RegisterDebtFragment"
+        android:label="fragment_register_debt"
+        tools:layout="@layout/fragment_register_debt" />
+    <fragment
+        android:id="@+id/showAllDebtsFragment"
+        android:name="com.kotlin.android_kotlin.view.ShowAllDebtsFragment"
+        android:label="fragment_show_all_debts"
+        tools:layout="@layout/fragment_show_all_debts" />
+    <fragment
+        android:id="@+id/registerPaymentMethodFragment"
+        android:name="com.kotlin.android_kotlin.view.RegisterPaymentMethodFragment"
+        android:label="fragment_register_payment_method"
+        tools:layout="@layout/fragment_register_payment_method" />
+
+    <fragment
+        android:id="@+id/showAllPaymentMethodsFragment"
+        android:name="com.kotlin.android_kotlin.view.ShowAllPaymentMethodsFragment"
+        android:label="fragment_show_all_payment_methods"
+        tools:layout="@layout/fragment_show_all_payment_methods" />
+</navigation>

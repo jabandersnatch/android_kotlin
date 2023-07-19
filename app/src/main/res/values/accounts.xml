@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <string-array name="Accounts">
+        <item>Cash</item>
+        <item>Bancolombia</item>
+        <item>Nequi</item>
+        <item>Daviplata</item>
+        <item>Debit card</item>
+    </string-array>
+</resources>

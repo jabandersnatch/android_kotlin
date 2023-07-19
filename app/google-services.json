@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "342461119388",
+    "firebase_url": "https://budgmodel-default-rtdb.firebaseio.com",
+    "project_id": "budgmodel",
+    "storage_bucket": "budgmodel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342461119388:android:64e36646a37e664c37a659",
+        "android_client_info": {
+          "package_name": "com.kotlin.android_kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342461119388-lnc3pc72m67nis01tp3l4dh5ebf1hg34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrYmXpiUId8daRQ4YxRv9EUpSkPs2YEgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342461119388-ivb192pnpc4ooaavbgui52n5lv2236bm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
